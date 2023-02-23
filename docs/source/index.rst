@@ -38,40 +38,67 @@ With this, you can easily see how IREX's functions works.
 
 Then, we highly recommend to use IREX with the following sequence of functions:
 
-   -**Reset** or **Iterate**: the first one is for prepare IREX for the first iteration or start again the full iterative process, and the second one is to prepare IREX for the second or any next iteration.
-   
-   -**train_model**.
-   
-   -**evaluate_model**.
-   
-   -**run_ALE**.
-   
-   -**apply_Threshold**.
-   
-   -**search_PAI**.
-   
-   -**search_PAI**.
-   
-   -**run_LIME**.
-   
-   -**run_SHAP**.
-   
-   -**precompute_Heatmaps**.
-   
-   -**run_Feature_Importance_Heatmap**.
-   
-   -**run_SHAP_Heatmap**.
-   
-   -**run_LIME_Heatmap**.
-   
-   -**run_ALE_Heatmap**.
-   
-   -**run_Compare_Heatmaps**.
-   
-   -**plot_global_process**: use after two or more completed iterations.
+.. code-block:: console
 
+   IREX.load_IREX_datasets()
 
-   
+.. code-block:: console
+
+   IREX.reset() ##For first iteration or
+   IREX.iterate() ##For second or greater iteration
+
+.. code-block:: console
+
+   IREX.train_model(do_oversample = True, optimize = False, saveModel = True)
+
+.. code-block:: console
+
+   IREX.evaluate_model()
+
+.. code-block:: console
+
+   IREX.run_ALE()
+
+.. code-block:: console
+
+   IREX.apply_Threshold(0.01, -0.01)
+
+.. code-block:: console
+
+   IREX.search_PAI("POSITIVE_CLASS")
+
+.. code-block:: console
+
+   IREX.run_LIME()
+
+.. code-block:: console
+
+   IREX.run_SHAP()
+
+.. code-block:: console
+
+   IREX.precompute_Heatmaps()
+
+.. code-block:: console
+
+   IREX.run_Feature_Importance_Heatmap()
+
+.. code-block:: console
+
+   IREX.run_SHAP_Heatmap()
+
+.. code-block:: console
+
+   IREX.run_LIME_Heatmap()
+
+.. code-block:: console
+
+   IREX.run_ALE_Heatmap()
+
+.. code-block:: console
+
+   IREX.run_Compare_Heatmaps()
+
 List of functions
 =================
 
