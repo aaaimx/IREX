@@ -55,9 +55,18 @@ Then, we highly recommend to use IREX with the following sequence of functions:
 
    IREX.evaluate_model()
 
+.. image:: img/evaluate_model.png
+  :width: 400
+
 .. code-block:: console
 
    IREX.run_ALE()
+
+.. image:: img/Ale-bien.png
+  :width: 700
+
+.. image:: img/Ale-anomalo.png
+  :width: 700
 
 .. code-block:: console
 
@@ -71,9 +80,15 @@ Then, we highly recommend to use IREX with the following sequence of functions:
 
    IREX.run_LIME()
 
+.. image:: img/Grupo-1.png
+  :width: 1050
+
 .. code-block:: console
 
    IREX.run_SHAP()
+
+.. image:: img/Grupo-2.png
+  :width: 1050
 
 .. code-block:: console
 
@@ -83,21 +98,43 @@ Then, we highly recommend to use IREX with the following sequence of functions:
 
    IREX.run_Feature_Importance_Heatmap()
 
+.. image:: img/Grupo-3.png
+  :width: 1050
+
 .. code-block:: console
 
    IREX.run_SHAP_Heatmap()
+
+.. image:: img/Grupo-4.png
+  :width: 1050
 
 .. code-block:: console
 
    IREX.run_LIME_Heatmap()
 
+.. image:: img/Grupo-5.png
+  :width: 1050
+
 .. code-block:: console
 
    IREX.run_ALE_Heatmap()
 
+.. image:: img/Grupo-6.png
+  :width: 1050
+
 .. code-block:: console
 
    IREX.run_Compare_Heatmaps()
+
+.. image:: img/Grupo-7.png
+  :width: 1050
+
+.. code-block:: console
+
+   IREX.plot_global_process(['gray', 'black', 'red'])
+
+.. image:: img/Grupo-8.png
+  :width: 1050
 
 List of functions
 =================
