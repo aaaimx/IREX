@@ -32,3 +32,114 @@ The iterative process that the IREX software follows to refine a classification 
 5. The feedback provided by the expert user consisting of a list of confirmed anomalous items is used to remove the corresponding variables from the input dataset. With this, the ANN model can be retrained with the new data to start over with the first step.
 
 This process is repeated until the software finds no other PAIs in the dataset, generating a final chart describing the trade-off between removed PAIs and the model performance.
+
+Example
+=======
+
+First, create an IREX object named IREX, like this:
+
+.. code-block:: console
+
+   IREX = IREX()
+
+With this, you can easily see how IREX's functions works.
+
+Then, we highly recommend to use IREX with the following sequence of functions:
+
+.. code-block:: console
+
+   IREX.load_IREX_datasets()
+
+.. code-block:: console
+
+   IREX.reset() ##For first iteration or
+   IREX.iterate() ##For second or greater iteration
+
+.. code-block:: console
+
+   IREX.train_model(do_oversample = True, optimize = False, saveModel = True)
+
+.. code-block:: console
+
+   IREX.evaluate_model()
+
+.. image:: docs/source/img/evaluate_model.png
+  :width: 400
+
+.. code-block:: console
+
+   IREX.run_ALE()
+
+.. image:: docs/source/img/Ale-bien.png
+  :width: 700
+
+.. image:: docs/source/img/Ale-anomalo.png
+  :width: 700
+
+.. code-block:: console
+
+   IREX.apply_Threshold(0.01, -0.01)
+
+.. code-block:: console
+
+   IREX.search_PAI("POSITIVE_CLASS")
+
+.. code-block:: console
+
+   IREX.run_LIME()
+
+.. image:: docs/source/img/Grupo-1.png
+  :width: 1050
+
+.. code-block:: console
+
+   IREX.run_SHAP()
+
+.. image:: docs/source/img/Grupo-2.png
+  :width: 1050
+
+.. code-block:: console
+
+   IREX.precompute_Heatmaps()
+
+.. code-block:: console
+
+   IREX.run_Feature_Importance_Heatmap()
+
+.. image:: docs/source/img/Grupo-3.png
+  :width: 1050
+
+.. code-block:: console
+
+   IREX.run_SHAP_Heatmap()
+
+.. image:: docs/source/img/Grupo-4.png
+  :width: 1050
+
+.. code-block:: console
+
+   IREX.run_LIME_Heatmap()
+
+.. image:: docs/source/img/Grupo-5.png
+  :width: 1050
+
+.. code-block:: console
+
+   IREX.run_ALE_Heatmap()
+
+.. image:: docs/source/img/Grupo-6.png
+  :width: 1050
+
+.. code-block:: console
+
+   IREX.run_Compare_Heatmaps()
+
+.. image:: docs/source/img/Grupo-7.png
+  :width: 1050
+
+.. code-block:: console
+
+   IREX.plot_global_process(['gray', 'black', 'red'])
+
+.. image:: docs/source/img/Grupo-8.png
+  :width: 1050
