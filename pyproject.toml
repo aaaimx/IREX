@@ -4,5 +4,5 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "IREX"
-authors = [{name = "Cristian E. Sosa-Espadas", email = "graziella@lumache"}, {name = "Mauricio G. Orozco-del-Castillo", email = "graziella@lumache"}, {name = "Nora Cuevas-Cuevas", email = "graziella@lumache"}, {name = "Marta Caro-Martinez", email = "graziella@lumache"}, {name = "Juan A. Recio-García", email = "graziella@lumache"}]
+authors = [{name = "Cristian E. Sosa-Espadas", email = "e18081128@itmerida.edu.mx"}, {name = "Mauricio G. Orozco-del-Castillo", email = "mauricio.orozco@itmerida.edu.mx"}, {name = "Nora Cuevas-Cuevas", email = "nora.cc@merida.tecnm.mx"}, {name = "Juan A. Recio-García", email = "jareciog@fdi.ucm.es"}]
 dynamic = ["version", "description"]
